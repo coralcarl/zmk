@@ -14,11 +14,11 @@
 #define RAISE 2
 #define ADJUST 3
 
-/ {
-    lt {
-        flavor = "hold-preferred";
-    };
+&lt {
+    flavor = "hold-preferred";
+};
 
+/ {
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
