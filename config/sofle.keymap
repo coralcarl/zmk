@@ -15,7 +15,9 @@
 #define ADJUST 3
 
 / {
-    // Activate ADJUST layer by pressing raise and lower
+    lt {
+        flavor = "hold-preferred";
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
