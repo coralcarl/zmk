@@ -15,7 +15,8 @@
 #define ADJUST 3
 
 &lt {
-    flavor = "hold-preferred";
+    flavor = "balanced";
+    quick-tap-ms = <200>;
 };
 
 / {
