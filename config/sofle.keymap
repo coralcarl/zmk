@@ -22,6 +22,7 @@
 / {
     behaviours {
         fht: function_hold_tap {
+        #binding-cells = <2>;
         compatible = "zmk,behavior-hold-tap";
         flavor = "tap-preferred";
         tapping-term-ms = <1000>;
