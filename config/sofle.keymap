@@ -72,11 +72,11 @@
 
         FUN {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans                        &trans    &trans    &trans     &trans     &trans    &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LA(F4)                    &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(F5)                    &kp LBKT  &kp RBKT  &kp MINUS  &kp EQUAL  &kp BSLH  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LGUI    &trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans
-                &trans   &trans   &trans   &trans      &trans    &trans  &trans    &trans    &trans     &trans
+&trans  &trans  &trans   &trans   &trans   &trans                        &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LA(F4)                    &kp N6  &kp N7    &kp N8    &kp N9     &kp N0     &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(F5)                    &trans  &kp LBKT  &kp RBKT  &kp MINUS  &kp EQUAL  &kp BSLH
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LGUI    &trans    &trans  &trans  &trans    &trans    &trans     &trans     &trans
+                &trans   &trans   &trans   &trans      &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
 
