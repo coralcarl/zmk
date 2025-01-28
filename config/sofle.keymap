@@ -93,11 +93,11 @@
 
         META {
             bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans                             &trans  &trans  &trans      &trans          &trans           &trans
-&trans  &trans  &trans  &trans    &trans  &trans                             &trans  &trans  &kp INSERT  &trans          &kp PRINTSCREEN  &trans
-&trans  &trans  &trans  &trans    &trans  &tog 1                             &trans  &trans  &trans      &kp SCROLLLOCK  &trans           &trans
-&trans  &trans  &trans  &kp CAPS  &trans  &kp PAUSE_BREAK  &trans    &trans  &trans  &trans  &trans      &trans          &trans           &trans
-                &trans  &trans    &trans  &trans           &trans    &trans  &trans  &trans  &trans      &trans
+&tog 1  &trans  &trans  &trans    &trans  &trans                    &trans      &trans           &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                    &trans      &trans           &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                    &trans      &trans           &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &kp CAPS  &trans  &trans  &trans    &trans  &kp INSERT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
+                &trans  &trans    &trans  &trans  &trans    &trans  &trans      &trans           &trans          &trans
             >;
         };
     };
