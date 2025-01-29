@@ -47,7 +47,7 @@
         dotcomma: dotcomma {
             compatible = "zmk,behavior-mod-morph";
             label = "DOTCOMMA";
-            bindings = <&kp KP_DOT>, <&kp KP_COMMA>;
+            bindings = <&kp KP_DOT>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
