@@ -54,7 +54,7 @@
 &kp TAB      &kp Q   &kp W   &kp E   &kp R     &kp T                                   &kp Y      &kp U                   &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL    &kp A   &kp S   &kp D   &kp F     &kp G                                   &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &kp SQT
 &left_shift  &kp Z   &kp X   &kp C   &kp V     &kp B      &kp C_PLAY_PAUSE    &trans   &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &right_shift
-                     &trans  &trans  &kp LALT  &lt 2 ESC  &kp SPACE           &kp RET  &lt 3 DEL  &layer_hold_toggle 4 4  &trans     &trans
+                     &trans  &trans  &kp LALT  &lt 2 ESC  &kp SPACE           &kp RET  &lt 3 DEL  &layer_hold_toggle 5 5  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -70,23 +70,33 @@
             >;
         };
 
-        SymFun {
+        Function {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans                             &trans     &trans                &trans                 &trans         &trans         &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LA(F4)                         &kp TILDE  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(MINUS)  &kp LS(EQUAL)  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN                    &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL      &kp BSLH
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LGUI         &trans    &trans  &trans     &trans                &trans                 &trans         &trans         &trans
-                &trans   &trans   &trans   &trans           &trans    &trans  &trans     &trans                &trans                 &trans
+&trans  &trans  &trans   &trans   &trans   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LA(F4)                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LGUI         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans   &trans   &trans           &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        NavNum {
+        Navigation {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RGUI  &trans    &trans  &trans     &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&trans  &trans      &trans      &trans            &trans             &trans                        &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)        &kp LS(N4)         &kp LS(N5)                    &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
+&trans  &kp MINUS   &kp EQUAL   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE                     &trans      &trans      &trans      &trans      &kp PIPE    &kp BSLH
+&trans  &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE   &trans    &trans  &trans      &trans      &trans      &trans      &trans      &trans
+                    &trans      &trans            &trans             &trans      &trans    &trans  &trans      &trans      &trans      &trans
             >;
         };
 
@@ -116,7 +126,17 @@
 
         META {
             if-layers = <2 3>;
+            then-layer = <6>;
+        };
+
+        Func-Num {
+            if-layers = <2>;
             then-layer = <5>;
+        };
+
+        NavSym {
+            if-layers = <3>;
+            then-layer = <4>;
         };
     };
 };
