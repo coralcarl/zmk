@@ -48,13 +48,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        Alpha {
             bindings = <
 &trans       &trans  &trans  &trans  &trans              &trans                                  &trans     &trans    &trans     &trans   &trans    &trans
 &kp TAB      &kp Q   &kp W   &kp E   &kp R               &kp T                                   &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL    &kp A   &kp S   &kp D   &kp F               &kp G                                   &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &left_shift  &kp Z   &kp X   &kp C   &kp V               &kp B      &kp C_PLAY_PAUSE    &trans   &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &right_shift
-                     &trans  &trans  &holdtoggle LALT 7  &lt 3 ESC  &kp SPACE           &kp RET  &lt 5 DEL  &kp RGUI  &trans     &trans
+                     &trans  &trans  &holdtoggle LALT 6  &lt 3 ESC  &kp SPACE           &kp RET  &lt 3 DEL  &kp RGUI  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -76,37 +76,27 @@
 &trans  &trans  &trans  &trans  &trans              &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &holdtoggle LALT 8  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &holdtoggle LALT 7  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        SymbolsLeft {
+        Num {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &kp F5     &kp LA(F4)                         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSLH
-&trans  &mo 4     &kp LALT  &kp LCTRL  &kp LSHFT  &kp PRINTSCREEN                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LGUI  &trans    &trans     &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans    &trans     &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans
+&trans     &trans    &trans    &trans     &trans     &trans                    &trans  &trans     &trans     &trans    &trans    &trans
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
+&trans     &mo 4     &kp LALT  &kp LCTRL  &kp LSHFT  &trans                    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &mo 5     &trans
+&trans     &kp LGUI  &trans    &trans     &trans     &trans  &trans    &trans  &trans  &trans     &trans     &trans    &kp RGUI  &trans
+                     &trans    &trans     &trans     &trans  &trans    &trans  &trans  &mo 8      &trans     &trans
             >;
         };
 
-        ExtraSymbols {
+        Extras {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans    &trans    &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans
-            >;
-        };
-
-        SymbolsRight {
-            bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans    &trans    &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans  &trans     &trans     &trans    &trans    &trans
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &mo 6     &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans    &kp RGUI  &trans
-                   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &kp F5  &kp LA(F4)                         &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
+&trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN                    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans    &trans  &trans  &trans     &trans     &trans    &trans    &trans
+                &trans  &trans  &trans  &trans           &trans    &trans  &trans  &trans     &trans     &trans
             >;
         };
 
@@ -123,7 +113,7 @@
         Numpad {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                          &trans           &trans     &trans     &trans     &trans        &trans
-&tog 7  &trans  &trans  &trans  &trans  &trans                          &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &trans
+&tog 6  &trans  &trans  &trans  &trans  &trans                          &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                          &kp KP_DIVIDE    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_NUMLOCK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &trans
                 &trans  &trans  &trans  &trans  &trans    &kp KP_ENTER  &kp KP_N0        &trans     &trans     &trans
@@ -133,7 +123,7 @@
         Numpad2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                          &trans           &trans     &trans     &trans     &trans        &trans
-&tog 8  &trans  &trans  &trans  &trans  &trans                          &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &trans
+&tog 7  &trans  &trans  &trans  &trans  &trans                          &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                          &kp KP_DIVIDE    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_NUMLOCK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp COMMA     &trans
                 &trans  &trans  &trans  &trans  &trans    &kp KP_ENTER  &kp KP_N0        &trans     &trans     &trans
@@ -145,20 +135,13 @@
 &trans  &trans  &trans          &trans    &trans  &trans                    &trans          &trans  &trans      &trans          &trans           &trans
 &trans  &trans  &trans          &trans    &trans  &trans                    &trans          &trans  &kp INSERT  &trans          &kp PAUSE_BREAK  &trans
 &trans  &trans  &kp SCROLLLOCK  &trans    &trans  &tog 1                    &trans          &trans  &trans      &kp SCROLLLOCK  &trans           &trans
-&trans  &trans  &trans          &kp CAPS  &trans  &trans  &trans    &trans  &kp KP_NUMLOCK  &trans  &tog 8      &trans          &trans           &trans
+&trans  &trans  &trans          &kp CAPS  &trans  &trans  &trans    &trans  &kp KP_NUMLOCK  &trans  &tog 7      &trans          &trans           &trans
                 &trans          &trans    &trans  &trans  &trans    &trans  &trans          &trans  &trans      &trans
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        META {
-            if-layers = <3 5>;
-            then-layer = <10>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
 &sensors { triggers-per-rotation = <30>; };
