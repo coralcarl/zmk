@@ -65,8 +65,8 @@
             bindings = <
 &trans  &trans  &trans   &trans   &trans   &trans                             &trans     &trans      &trans  &trans  &trans     &trans
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LA(F4)                         &kp LBKT   &kp N7      &kp N8  &kp N9  &kp RBKT   &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN                    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp EQUAL  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LGUI         &trans    &trans  &kp GRAVE  &kp N1      &kp N2  &kp N3  &trans     &kp BSLH
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN                    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp EQUAL  &kp BACKSLASH
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LGUI         &trans    &trans  &kp GRAVE  &kp N1      &kp N2  &kp N3  &trans     &trans
                 &trans   &trans   &trans   &trans           &trans    &trans  &kp N0     &kp KP_DOT  &trans  &trans
             >;
         };
